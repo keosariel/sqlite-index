@@ -50,7 +50,7 @@ class Index(object):
         
         for field in self._fields:
             if field not in self.current_index:
-                self.current_index[field] = []
+                self.current_index[field] = {}
     
     @timeit    
     def search(self,query,_fields=[]):
