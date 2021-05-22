@@ -91,12 +91,17 @@ Here is a quick example to using `sqlite-index`
       )
 
   # Search Index
-  
+
   print( PRODUCTS_INDEX.search("with", ["description"]))
   
   # outputs:
   # search function took 0.000 ms
   # [0, 2, 3]
+  
+  # To seach the title
+  # print( PRODUCTS_INDEX.search("with", ["title"]))
+  # However you can put all fields to search the whole index
+  # i.e PRODUCTS_INDEX.search("with", ["title", "description"])
 ..
 
 To remove data from Index
